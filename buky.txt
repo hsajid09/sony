@@ -1,1 +1,7 @@
 this is bucky file and commit by not bucky..
+thristy branch change and will appear in code,
+if(thirsty==water){
+	drink water;
+}else{
+	drink soda;
+}
