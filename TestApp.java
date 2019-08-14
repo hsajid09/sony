@@ -18,12 +18,18 @@ public class TestApp {
 		alien.setAname("Scott");
 		alien.setColor("Greeen");
 		session.save(alien);
+		alien.setAname("Andy");
+		alien.setColor("Blue");
+		session.save(alien);
 		tx.commit();
 		session.close();
 		session=sf.openSession();
 		alien=session.get(Alien.class, 1);
 		System.out.println(alien);
 		session.close();
+		session=sf.openSession();
+		alien=session.get(Alien.class, 2);
+		System.out.println(alien);
 
 	}
 
