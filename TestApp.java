@@ -15,14 +15,14 @@ public class TestApp {
 		Transaction tx=session.beginTransaction();
 		Alien alien=new Alien();
 		
-		alien.setAname("Scott");
+		/*alien.setAname("Scott");
 		alien.setColor("Greeen");
 		session.save(alien);
 		alien.setAname("Andy");
 		alien.setColor("Blue");
 		session.save(alien);
 		tx.commit();
-		session.close();
+		session.close();*/
 		session=sf.openSession();
 		alien=session.get(Alien.class, 1);
 		System.out.println(alien);
